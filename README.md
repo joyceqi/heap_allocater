@@ -3,10 +3,10 @@
 
 
 代码包括：    
-memlib.cpp  存储器系统模型，目的在于允许我们在不干涉已经存在的系统层malloc包的情况下运行分配器         
-mm.cpp      分配器，包括初始化、malloc和free的实现     
-test.cpp    用于测试的程序     
+memlib.c  存储器系统模型，目的在于允许我们在不干涉已经存在的系统层malloc包的情况下运行分配器         
+mm.c      分配器，包括初始化、malloc和free的实现     
+test.c    用于测试的程序     
 
 
-可通过编译和链接memlib.cpp, mm.cpp到测试程序中，来查看效果：     
-g++ -static -m32 test.cpp memlib.cpp mm.cpp -o test
+可通过编译和链接memlib.c, mm.c到测试程序中，来查看效果：     
+gcc -static -m32 test.c memlib.c mm.c -o test
