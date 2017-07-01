@@ -12,9 +12,11 @@
 立即合并：当释放块时，立即判断前后相邻块是否空闲，一旦空闲则合并；而不是再等到某个稍晚的时候再合并空闲块，如直到某个分配请求失败时才去合并所有空闲块。
 
 代码包括：
-memlib.cpp  存储器系统模型，目的在于允许我们在不干涉已经存在的系统层malloc包的情况下运行分配器
-mm.cpp      分配器，包括初始化、malloc和free的实现
-test.cpp    用于测试的程序
+
+memlib.cpp  存储器系统模型，目的在于允许我们在不干涉已经存在的系统层malloc包的情况下运行分配器    
+mm.cpp      分配器，包括初始化、malloc和free的实现     
+test.cpp    用于测试的程序     
+
 
 可通过编译和链接memlib.cpp, mm.cpp到测试程序中，来查看效果：
 g++ -static -m32 test.cpp memlib.cpp mm.cpp -o test
